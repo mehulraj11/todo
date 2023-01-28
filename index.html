@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,26 @@
     <link rel="stylesheet" href="style.css">
     <title>to-do-list</title>
 </head>
+
 <body>
     <div class="container">
         <header>To do list</header>
         <div class="container-items">
-            <input type="text" placeholder="Enter your task">
-            <button>+</button>
+            <div class="container-heading">
+                <input type="text" placeholder="Enter your task" class="work">
+                <button class="btn" id="add-task">+</button>
+            </div>
+            <!-- <div class="task-left">
+                <input type="checkbox" class="checkbox">
+                <input type="text-area"  class="task">     
+            </div> -->
         </div>
         <div class="footer-items">
-                <p>You have Pending Tasks</p>
-                <button class="btn">Clear All</button>
+            <p>You have Pending Tasks</p>
+            <button class="btn">Clear All</button>
         </div>
     </div>
 </body>
+<script src="index.js"></script>
+
 </html>
