@@ -1,70 +1,189 @@
-*{
+* {
     padding: 0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
-.container{
-    /* border: 2px solid red; */
-    width: 100%;
-    height: 50vh;
+
+img {
+    position: relative;
+    bottom: 5px;
+    /* border: 1px solid black; */
+    height: 70px;
+    width: 70px;
 }
-.container header{
-    font-family: cursive;
+
+#please {
+    position: relative;
+    top: 30px;
+}
+
+#errorChecked {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    top: 56px;
+    height: 60px;
+    width: 300px;
+    background-color: #e71212;
+    color: white;
+}
+
+.error {
+    visibility: hidden;
+    z-index: 2;
+    border-radius: 20px;
+    background-color: white;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    /* display: inline; */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 45px;
+    top: 160px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #bdb5b5;
+    box-shadow: 1px 20px 20px grey;
+}
+
+.container {
+    position: relative;
+    top: 30px;
+    /* left: 20px; */
+    /* box-shadow: 2px 2px 15px black; */
+    border: 2px solid grey;
+    width: 400px;
+    height: 650px;
+}
+
+#heading {
+    /* visibility: hidden; */
+    display: inline;
+    position: relative;
+    bottom: 185px;
+    left: 10px;
+    font-size: 2rem;
+    font-family: sans-serif;
     font-weight: bold;
-    text-align: center;
+    /* border: 1px solid red; */
+    /* text-align: center; */
+
 }
+
+#close {
+    position: relative;
+    bottom: 185px;
+    left: 240px;
+    cursor: pointer;
+    text-align: center;
+    display: inline;
+    font-size: 1.5rem;
+    /* border: 1px solid grey; */
+    width: 30px;
+    height: 20px;
+    /* border-radius: 50px; */
+
+}
+
+#close:hover {
+    /* background-color: rgb(224, 219, 219); */
+    text-shadow: 1px 1px 2px black;
+    transition: all .3s ease-in-out;
+}
+
 /* CONTAINER-ITEMS IS FLEX-BOX AND ELEMENT UNDER CONTAINER-ITEMS IS TERMED AS FLEX-ITEMS AND PROPERTIES WILL BE APPLIED TO FLEX-ITEMS */
-.container-items{
+.container-items {
+    /* visibility: hidden; */
+    position: relative;
+    bottom: 165px;
     margin: 2% 0%;
     /* border: 2px solid black; */
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
+    height: 400px;
+    /* filter: blur(5px); */
 }
-.container-heading{
+
+.container-heading {
     display: flex;
     flex-direction: row;
 }
-.container-items button{
-    margin: 0% 0.5%;
-    border: 2px solid white;
-    background-color: red;
-    border-radius: 5px;
-    color: white;
-    font-size: 2rem;
-    padding: 0% 1%;
-}
+
 /* this is a flex-box */
-.footer-items{
+.footer {
+    position: relative;
+    bottom: 130px;
     /* border: 2px solid black; */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.btn{
-    cursor: pointer;
-}
-.task-left{
-    margin-top: 5px;
-    display: flex;
-    /* border: 1px solid red; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.task{
-    border-radius: 10px;
-    margin-top: 10px;
-    border: 1px solid black;
-    height: 30px;
-    width: 200px;
-    margin-left: 5px;
+
+.btn {
+    border: 1px solid white;
+    position: relative;
+    color: white;
+    background-color: red;
+    font-size: 2rem;
+    font-weight: 100px;
+    /* bottom: 10px; */
+    /* left: 170px; */
+    /* right: ; */
+    border-radius: 50px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    text-align: center;
 }
-.checkbox{
-    /* border-radius: 30px; */
-    margin-top: 10px;
+.paragraph {
+    /* text-align: center; */
+
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    /* left: 30px; */
+    margin-top: 5px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    font-size: 1rem;
+    height: 20px;
+    width: 380px;
+    font-size: 1.5rem;
+    height: 35px;
+    box-shadow: 1px 5px 20px grey;
+}
+
+#errorChecked {
+    transition: width 1s, height 1s;
+}
+
+input {
+    position: relative;
+    bottom: 200px;
+    visibility: hidden;
     border: 1px solid black;
-    /* height: 30px; */
-    /* width: 20px; */
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 20px grey;
+    font-size: 1.3rem;
+    /* font-weight: bolder; */
+    filter: blur(0px);
+}
+
+.work::placeholder {
+    text-align: center;
+    font-size: 1.5rem;
 }

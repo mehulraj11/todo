@@ -11,22 +11,25 @@
 
 <body>
     <div class="container">
-        <header>To do list</header>
-        <div class="container-items">
-            <div class="container-heading">
-                <input type="text" placeholder="Enter your task" class="work">
-                <button class="btn" id="add-task">+</button>
-            </div>
-            <!-- <div class="task-left">
-                <input type="checkbox" class="checkbox">
-                <input type="text-area"  class="task">     
-            </div> -->
+        <div class="error">
+            <img src="vecteezy_warning-sign-icon-transparent-background_12042292_902.png" alt="">
+            <p id="please">Please Enter Task!</p>
+            <p id="errorChecked">OK</p>
         </div>
-        <div class="footer-items">
-            <p>You have Pending Tasks</p>
-            <button class="btn">Clear All</button>
+        <header id="heading">My Task</header>
+        <p id="close">x</p>
+        <div class="container-items">
+            <!-- <div id="task"> -->
+                <!-- <p class="paragraph">check</p> -->
+            <!-- </div> -->
+        </div>
+        <div class="footer">
+            <input type="text" placeholder="Enter your task" class="work">
+            <button class="btn" id="add-task">+</button>
+
         </div>
     </div>
+
 </body>
 <script src="index.js"></script>
 
